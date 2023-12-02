@@ -4,11 +4,25 @@
   height: 100%;
   width: 100%;
   color: black;
-  background-image: url('/chapiteauCompressed.jpeg');
+  background-image: url('/chapiteauCompresser.jpeg');
   background-size: cover;
   background-position-x: center;
   background-position-y: bottom;
   overflow: hidden;
+}
+
+.curtainBody {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.curtainBodyOpen {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .curtainContainer {
@@ -20,7 +34,7 @@
   margin: auto;
   transform-style: preserve-3d;
   overflow: hidden;
-  transition: transform 6s ease;
+  transition: transform 3s ease;
 }
 
 #leftCurtains {
@@ -35,11 +49,11 @@
   transform: translatex(15vw);
 }
 
-.curtainBody:hover #leftCurtains {
+.curtainBodyOpen #leftCurtains {
   transform: translatex(-100vw);
 }
 
-.curtainBody:hover #rightCurtains {
+.curtainBodyOpen #rightCurtains {
   transform: translatex(100vw);
 }
 
@@ -177,13 +191,6 @@
   animation-delay: -0.1s;
 }
 
-.curtainBody {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
 .overlay {
   display: block;
   position: absolute;
@@ -196,6 +203,6 @@
   transition: opacity 3s ease;
 }
 
-.curtainBody:hover .overlay {
+.curtainBodyOpen .overlay {
   opacity: 0;
 }
