@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link rel="icon" href="/favicon.webp" />
       </Head>
-      <body className={'bg-neutral-50'}>
+      <body>
         <Main />
         <NextScript />
       </body>

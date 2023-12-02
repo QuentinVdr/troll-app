@@ -3,28 +3,39 @@ import styles from '../styles/index.module.css';
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.rxWorld}>
-        <section className={styles.rnOuter}>
-          <section className={styles.aoTable}>
-            <div className={styles.aoTableCell}>
-              <h1>vertical & horizontal centering with display:table</h1>
-              <p>With connected subline</p>
-            </div>
-          </section>
-
-          <div className={styles.rnInner}>
-            <div className={styles.rnUnit}></div>
-            <div className={styles.rnUnit}></div>
-            <div className={styles.rnUnit}></div>
-            <div className={styles.rnUnit}></div>
-            <div className={styles.rnUnit}></div>
-            <div className={styles.rnUnit}></div>
-            <div className={styles.rnUnit}></div>
-            <div className={styles.rnUnit}></div>
-            <div className={styles.rnUnit}></div>
-            <div className={styles.rnUnit}></div>
-          </div>
-        </section>
+      <div className={styles.content}>
+        <h1 className={styles.title}>Content</h1>
+      </div>
+      <div className={styles.curtainBody}>
+        <div id={styles.leftCurtains} className={styles.curtainContainer}>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+        </div>
+        <div id={styles.rightCurtains} className={styles.curtainContainer}>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+          <div className={styles.curtain}></div>
+        </div>
+        <div className={styles.overlay}></div>
       </div>
     </main>
   );
