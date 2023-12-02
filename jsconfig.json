@@ -1,7 +1,20 @@
 {
   "compilerOptions": {
+    "forceConsistentCasingInFileNames": true, // Force to import the file by taking into account the case sensitive
+    "resolveJsonModule": true, // Include modules imported with .json extension
+    "isolatedModules": true, // Unconditionally emit imports for unresolved files
+    "checkJs": true,
+    "jsx": "preserve", // Will warn if a module can't be correctly interpreted by a single-file transpilation process
+    "baseUrl": ".",
+    // Path aliases configuration (don't forget to also configure Vite with these)/
     "paths": {
-      "@/*": ["./src/*"]
+      "@components/*": ["src/components/*"],
+      "@contexts/*": ["src/contexts/*"],
+      "@data/*": ["src/data/*"],
+      "@pages/*": ["src/pages/*"],
+      "@styles/*": ["src/styles/*"]
     }
-  }
+  },
+  "include": ["src", ".eslintrc.json"],
+  "exclude": ["node_modules", "build", ".vscode", ".git", "dist"]
 }
