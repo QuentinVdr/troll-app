@@ -16,7 +16,9 @@ export const CurtainsProvider = ({ children }) => {
 
   return (
     <CurtainsContext.Provider value={contextValue}>
-      <Curtains isOpen={isOpen}>{children}</Curtains>
+      <Curtains isOpen={isOpen} updateCurtains={updateCurtains}>
+        {children}
+      </Curtains>
     </CurtainsContext.Provider>
   );
 };
