@@ -6,7 +6,7 @@ export default function Curtains({ children, isOpen, updateCurtains }) {
 
   return (
     <>
-      <div className={styles.content}>{children}</div>
+      {children}
       <div className={curtainBodyClass}>
         <Image
           src={'/rope.svg'}
