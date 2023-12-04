@@ -12,7 +12,7 @@ export default function Curtains({ children, isOpen, updateCurtains }) {
           src={'/rope.svg'}
           height={180}
           width={120}
-          className=" absolute right-20 z-10"
+          className=" absolute right-20 z-10 cursor-pointer"
           alt="rope to open the curtain"
           onClick={() => updateCurtains(!isOpen)}
         />

@@ -50,12 +50,12 @@
   margin: 0;
   padding: 0;
   height: 120vh;
-  background: repeating-linear-gradient(to left, #e61a1a 4vw, #8a0f0f 8vw, #f07575 10vw);
+  background: repeating-linear-gradient(to right, #e61a1a 4vw, #8a0f0f 8vw, #f07575 10vw);
   background-size: 100% 100%;
   transform-origin: 0 0%;
   transform: rotate(3deg);
   transition: transform 2s ease;
-  animation: swing 3s ease infinite;
+  animation: swing 5s ease infinite;
 }
 
 @keyframes swing {
