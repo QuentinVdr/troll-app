@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES6",
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -15,6 +17,6 @@
       "@styles/*": ["src/styles/*"]
     }
   },
-  "include": ["src", ".eslintrc.json"],
+  "include": ["src", ".eslintrc.json", "**/*.js", "**/*.jsx"],
   "exclude": ["node_modules", "build", ".vscode", ".git", "dist"]
 }
