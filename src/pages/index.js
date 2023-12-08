@@ -1,7 +1,7 @@
 import { useCurtains } from '@contexts/CurtainsContext';
 import { cringeVideos } from '@data/cringeVideo';
 import styles from '@styles/index.module.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
   const { isOpen } = useCurtains();
@@ -10,6 +10,10 @@ export default function Home() {
     return cringeVideos[randomIndex];
   };
   const [cringeVideo, setCringeVideo] = useState(getRandomVideo);
+
+  useEffect(() => {
+    setCringeVideo(getRandomVideo);
+  }, [isOpen]);
 
   return (
     <main className={styles.content}>
