@@ -1,17 +1,17 @@
 export const cringeVideos = [
   {
     name: 'quoicoubeh danse',
-    id: 'quaQQJtfeKc',
-    url: 'https://www.youtube.com/watch?v=quaQQJtfeKc'
+    url: 'https://www.youtube.com/watch?v=quaQQJtfeKc',
+    embed: '//www.youtube.com/embed/quaQQJtfeKc?autoplay=1'
   },
   {
     name: 'quoicoubebou',
-    id: 'IlU5Vujxyog',
-    url: 'https://www.youtube.com/watch?v=IlU5Vujxyog'
+    url: 'https://www.youtube.com/watch?v=IlU5Vujxyog',
+    embed: '//www.youtube.com/embed/IlU5Vujxyog?autoplay=1'
   },
   {
     name: 'tu es tilté boubou',
-    id: '7gVsq3IZOR4',
-    url: 'https://www.youtube.com/watch?v=7gVsq3IZOR4'
+    url: 'https://www.youtube.com/watch?v=7gVsq3IZOR4',
+    embed: '//www.youtube.com/embed/7gVsq3IZOR4?autoplay=1'
   }
 ];
