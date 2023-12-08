@@ -1,4 +1,3 @@
-import { YoutubePlayer } from '@components/YoutubePlayer/YoutubePlayer';
 import { useCurtains } from '@contexts/CurtainsContext';
 import { cringeVideos } from '@data/cringeVideo';
 import styles from '@styles/index.module.css';
@@ -10,7 +9,7 @@ export default function Home() {
     const randomIndex = Math.floor(Math.random() * cringeVideos.length);
     return cringeVideos[randomIndex];
   };
-  const [cringeVideo, setCringeVideo] = useState(getRandomVideo());
+  const [cringeVideo, setCringeVideo] = useState(getRandomVideo);
 
   return (
     <main className={styles.content}>
@@ -19,7 +18,9 @@ export default function Home() {
           Bienvenue dans le cirque
         </h1>
       </div>
-      <div className="mt-20 flex justify-center">{!!isOpen && <YoutubePlayer videoId={cringeVideo.id} />}</div>
+      <div className="mt-20 flex justify-center">
+        {!!isOpen && <iframe id="video" width="640" height="480" src={cringeVideo.embed} allowFullScreen></iframe>}
+      </div>
     </main>
   );
 }
