@@ -23,39 +23,39 @@
 #leftCurtains {
   transform-origin: -120% top;
   justify-content: flex-start;
-  transform: translatex(-15vw);
+  transform: translatex(-15dvw);
   overflow: hidden;
 }
 
 #rightCurtains {
   transform-origin: 120% top;
   justify-content: flex-end;
-  transform: translatex(15vw);
+  transform: translatex(15dvw);
   overflow: hidden;
 }
 
 .curtainBodyOpen #leftCurtains {
   overflow: hidden;
-  transform: translatex(-100vw);
+  transform: translatex(-100dvw);
 }
 
 .curtainBodyOpen #rightCurtains {
   overflow: hidden;
-  transform: translatex(100vw);
+  transform: translatex(100dvw);
 }
 
 .curtain {
   display: inline-block;
-  width: 15vw;
+  width: 15dvw;
   margin: 0;
   padding: 0;
-  height: 120vh;
-  background: repeating-linear-gradient(to right, #e61a1a 4vw, #8a0f0f 8vw, #f07575 10vw);
+  height: 120dvh;
+  background: repeating-linear-gradient(to right, #e61a1a 4dvw, #8a0f0f 8dvw, #f07575 10dvw);
   background-size: 100% 100%;
   overflow: hidden;
   transform-origin: 0 0%;
   transform: rotate(3deg);
-  transition: transform 2s ease;
+  transition: transform 3s ease;
   animation: swing 8s ease infinite;
 }
 
@@ -66,57 +66,57 @@
 }
 
 #leftCurtains .curtain:nth-child(2) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.1s;
 }
 
 #leftCurtains .curtain:nth-child(3) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.2s;
 }
 
 #leftCurtains .curtain:nth-child(4) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.3s;
 }
 
 #leftCurtains .curtain:nth-child(5) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.4s;
 }
 
 #leftCurtains .curtain:nth-child(6) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.5s;
 }
 
 #leftCurtains .curtain:nth-child(7) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.6s;
 }
 
 #leftCurtains .curtain:nth-child(8) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.7s;
 }
 
 #leftCurtains .curtain:nth-child(9) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.8s;
 }
 
 #leftCurtains .curtain:nth-child(10) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.9s;
 }
 
 #leftCurtains .curtain:nth-child(11) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -1s;
 }
 
 #leftCurtains .curtain:nth-child(12) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -1.1s;
 }
 
@@ -125,57 +125,57 @@
 }
 
 #rightCurtains .curtain:nth-child(2) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -1s;
 }
 
 #rightCurtains .curtain:nth-child(3) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.9s;
 }
 
 #rightCurtains .curtain:nth-child(4) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.8s;
 }
 
 #rightCurtains .curtain:nth-child(5) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.7s;
 }
 
 #rightCurtains .curtain:nth-child(6) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.6s;
 }
 
 #rightCurtains .curtain:nth-child(7) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.5s;
 }
 
 #rightCurtains .curtain:nth-child(8) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.4s;
 }
 
 #rightCurtains .curtain:nth-child(9) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.3s;
 }
 
 #rightCurtains .curtain:nth-child(10) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.2s;
 }
 
 #rightCurtains .curtain:nth-child(11) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.1s;
 }
 
 #rightCurtains .curtain:nth-child(12) {
-  margin-left: -10vw;
+  margin-left: -10dvw;
   animation-delay: -0.1s;
 }
 
@@ -184,21 +184,14 @@
   position: absolute;
   inset: 0;
   z-index: 2;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to top, rgba(2, 2, 2, 0) 0vh, black 100vh);
+  width: 100dvw;
+  height: 100dvh;
+  background: linear-gradient(to top, rgba(2, 2, 2, 0) 0dvh, black 100dvh);
   transform-origin: translateY(0);
   transition: all 3s ease;
 }
 
 .curtainBodyOpen .overlay {
   opacity: 0;
-  transform: translateY(-100vh);
-}
-
-@media only screen and (max-width: 600px) {
-  #leftCurtains,
-  #rightCurtains {
-    transform: translatex(0);
-  }
+  transform: translateY(-100dvh);
 }
