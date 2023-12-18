@@ -1,12 +1,32 @@
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import styles from './curtains.module.css';
 
 export default function Curtains({ children, isOpen, updateCurtains }) {
+  const [isOpenAfterAnimation, setIsOpenAfterAnimation] = useState(false);
+
+  useEffect(() => {
+    let timeoutId;
+    if (isOpen) {
+      setIsOpenAfterAnimation(isOpen);
+    } else {
+      timeoutId = setTimeout(() => {
+        setIsOpenAfterAnimation(isOpen);
+      }, 3000);
+    }
+    // Cleanup function to clear the timeout when the component unmounts
+    return () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, [isOpen]);
+
   const curtainBodyClass = isOpen ? styles.curtainBodyOpen : styles.curtainBody;
 
   return (
     <>
-      {children}
+      {isOpenAfterAnimation && children}
       <div className={curtainBodyClass}>
         <Image
           src={'/rope.svg'}
